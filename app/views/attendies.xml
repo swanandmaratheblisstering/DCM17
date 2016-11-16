@@ -1,0 +1,9 @@
+<Alloy>
+	<View class="container" id="attendiesScreen">
+	    
+		<Label class="lblScreenheader">Attendees</Label>
+		<ScrollView id="attendeesScrollView" layout="horizontal" top="35" width="90%" contentWidth="100%" bottom="20">
+		</ScrollView>
+	    <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+	</View>
+</Alloy>

@@ -1,0 +1,28 @@
+<Alloy>
+	<Widget src="kr.yostudio.drawer" onDraweropen="onDrawerOpen" onDrawerclose="onDrawerClose">
+		<View class="menuWrap" role="leftView">
+			<Require id="menuC" src="menu">
+			</Require>
+		</View>
+		<Window platform="ios" role="centerWindow" title="DCM 17">
+			<LeftNavButton>
+				<View>
+					<Button class="menuBtn" title="\uf0c9" color="#000000" onClick="onMenuButtonClick"/>
+				</View>
+			</LeftNavButton>
+			<Require src="main" id="mainC">
+			</Require>
+			<Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+		</Window>
+		<Window platform="android" role="centerWindow">
+		  <ActionBar onHomeIconItemSelected="onMenuButtonClick" title="DCM 17" ></ActionBar>
+			<!-- <Menu>
+				<MenuItem id="item1" title="Settings"/>
+				<MenuItem id="item2" title="Search"/>
+			</Menu> -->
+			<Require src="main" id="mainC">
+			</Require>
+			<Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+		</Window>
+	</Widget>
+</Alloy>

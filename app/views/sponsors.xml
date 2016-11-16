@@ -1,0 +1,26 @@
+<Alloy>
+	<View class="container" id="sponsorsScreen" >
+		<Label class="lblScreenheader">Sponsors</Label>
+		<!-- <ScrollableView id="sponsorsScrollableView" top="35dp" showPagingControl="true" backgroundColor="red" pageIndicatorColor="cyan">
+			<View>
+				<ImageView image="/sponsors/axelerant.png"/>
+			</View>
+			<View>
+				<ImageView image="/sponsors/iitb-fossee.png"/>
+			</View>
+			<View>
+				<ImageView image="/sponsors/axelerant.png"/>
+			</View>
+		</ScrollableView> -->
+		<ScrollView id="sponsorsScrollView" layout="vertical" top="35" width="90%" bottom="20">
+			<!-- <Label>---Platinum Sponsors------</Label>
+			<ImageView image="/sponsors/axelerant.png"/>
+			<Label>Tata Consultancy Services is an IT services, consulting and business solutions organization that delivers real results to global business, ensuring a level of certainty no other firm can match. TCS offers a consulting-led, integrated portfolio of IT, BPO, infrastructure, engineering and assurance services. This is delivered through its unique Global Network Delivery Model™, recognised as the benchmark of excellence in software development. A part of the Tata group, India’s largest industrial conglomerate, TCS has over 285,000 of the world’s best-trained consultants in 46 countries.</Label>
+			<ImageView image="/sponsors/iitb-fossee.png"/>
+			<Label>Tata Consultancy Services is an IT services, consulting and business solutions organization that delivers real results to global business, ensuring a level of certainty no other firm can match. TCS offers a consulting-led, integrated portfolio of IT, BPO, infrastructure, engineering and assurance services. This is delivered through its unique Global Network Delivery Model™, recognised as the benchmark of excellence in software development. A part of the Tata group, India’s largest industrial conglomerate, TCS has over 285,000 of the world’s best-trained consultants in 46 countries.</Label>
+			<Label>---Gold Sponsors------</Label>
+			<ImageView image="/sponsors/axelerant.png"/>
+			<Label>Since 2008, Axelerant has been delivering business value through quality and cost-effective open source application development and web technology services. Axelerant is a pioneering location independent, team focused and collaboration driven work culture. We are present across eleven cities across India the rhe US and growing fast.  We have a 100% on-track delivery record.</Label> -->
+		</ScrollView>	
+	</View>
+</Alloy>

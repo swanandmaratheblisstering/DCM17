@@ -1,0 +1,11 @@
+<Alloy>
+	<View class="container" id="sessionsScreen">
+	    
+		<View id="tabView" onClick="updateTblSessionData">
+			<Label class="lblTab" left="0" id="lblApproved">Approved</Label>
+			<Label class="lblTab" right="0" id="lblPending">Proposed</Label>
+		</View>
+		<TableView id="tblSession"></TableView>
+	    <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+	</View>
+</Alloy>

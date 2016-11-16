@@ -1,0 +1,5 @@
+<Alloy>
+	<View class="container" backgroundColor="red">
+		<Label id="label1">click me</Label>
+	</View>
+</Alloy>

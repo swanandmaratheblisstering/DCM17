@@ -1,0 +1,38 @@
+
+".container" : {
+  
+}
+
+"#tabView" : {
+	height : '30dp',
+	top : '0dp'
+}
+
+".lblTab" : {
+	width : "50%",
+	textAlign : 'center',
+	font : {
+		fontSize : 14
+	},
+	color : "#000000",
+	borderColor : '#80000000',
+	borderWidth : 1,
+	height : Titanium.UI.FILL
+}
+
+"#lblApproved" : {
+	selectedColor : "#2aa9de",
+	backgroundColor : "#2aa9de",
+	selected : true
+}
+
+"#lblPending" : {
+	selectedColor : "#2aa9de",
+	backgroundColor : "transparent",
+	selected : false
+}
+
+"#tblSession" : {
+	top : 30,
+	rowHeight : 50
+}

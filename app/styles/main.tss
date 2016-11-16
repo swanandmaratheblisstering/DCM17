@@ -1,0 +1,13 @@
+
+".container" : {
+  backgroundColor: '#efefef'
+}
+
+".beer" : {
+	font : {
+		fontFamily : 'FontAwesome',
+		fontSize : 100
+	},
+	color : '#f39c02',
+	textAlign : 'center'
+}

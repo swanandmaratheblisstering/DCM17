@@ -1,0 +1,45 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"#label": {
+	font: {
+		fontSize: 12
+	}
+}
+
+
+
+".menuBtn": {
+	left: -5,
+	font : {
+		fontFamily: "FontAwesome",
+		fontSize: 25
+	}
+}
+
+".menuWrap": {
+	top: 64
+}
+
+
+
+"#drawer": {
+    openDrawerGestureMode: "OPEN_MODE_ALL",
+    closeDrawerGestureMode: "CLOSE_MODE_MARGIN",
+    leftDrawerWidth: 200,
+    rightDrawerWidth: 200,
+
+    // use DrawerLayout for Android
+    drawerLayout: true
+}
+
+"Window": {
+    backgroundColor: 'white'
+}

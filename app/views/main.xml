@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="container">
+	    <!-- <Label text="\uf0fc" class="beer"></Label> -->
+	    <ImageView width="300" height="300" image="/mainScreen/dcmlogo.png"></ImageView>
+	    <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+	</View>
+</Alloy>

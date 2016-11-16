@@ -1,0 +1,25 @@
+<Alloy>
+    <View class="container" backgroundColor="#2aa9de">
+    	<ImageView top="20" height="150" width="150" image="mainScreen/dcmlogo.png" backgroundColor="#2aa9de"></ImageView>
+        <ListView id="listView" top="170">
+            <Templates>
+                <ItemTemplate name="menuItem" class="menuItem">
+                    <Label bindId="iconLabel" class="iconLabel"></Label>
+                    <Label bindId="titleLabel" class="titleLabel"></Label>
+                </ItemTemplate>
+            </Templates>
+            <!-- <ListSection headerTitle="Open New Window">
+              <ListItem iconLabel:text="\uf3c6" titleLabel:text="Smile" itemId="smile"></ListItem>
+              <ListItem iconLabel:text="\uf4d7" titleLabel:text="Don't cry" itemId="cry"></ListItem>
+            </ListSection> -->
+            <ListSection >
+        		<ListItem iconLabel:text="\uf015" titleLabel:text="Home" itemId="main"></ListItem>
+              	<ListItem iconLabel:text="\uf0d6" titleLabel:text="Sponsors" itemId="sponsors"></ListItem>
+              	<ListItem iconLabel:text="\uf017" titleLabel:text="Sessions" itemId="sessions"></ListItem>
+              	<ListItem iconLabel:text="\uf0c0" titleLabel:text="Attendees" itemId="attendies"></ListItem>
+              	<ListItem iconLabel:text="\uf0c0" titleLabel:text="Volunteers" itemId="volunteers"></ListItem>
+            </ListSection>
+        </ListView>
+        <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+    </View>
+</Alloy>
