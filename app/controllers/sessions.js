@@ -129,13 +129,17 @@ var updateTblSessionData = function(e){
 			$.lblApproved.selected = true;
 			$.lblPending.selected = false;
 			$.lblApproved.backgroundColor = e.source.selectedColor;
-			$.lblPending.backgroundColor = 'transparent';
+			$.lblApproved.color = "#ffffff";
+			$.lblPending.color = "#000000";
+			$.lblPending.backgroundColor = '#d4eef8';
 			$.tblSession.data = approvedData;
 		}else{
 			$.lblApproved.selected = false;
 			$.lblPending.selected = true;
-			$.lblApproved.backgroundColor = 'transparent';
 			$.lblPending.backgroundColor = e.source.selectedColor;
+			$.lblPending.color = "#ffffff";
+			$.lblApproved.color = "#000000";
+			$.lblApproved.backgroundColor = '#d4eef8';
 			$.tblSession.data = pendingData;
 		}
 	}

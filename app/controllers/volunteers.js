@@ -70,17 +70,20 @@ function addOnScrollView(obj){
 						borderRadius : 70,
 						borderWidth : 4,
 						borderColor : '#2aa9de',
-						image : categories[key][i].user_picture
+						image : categories[key][i].user_picture,
+						defaultImage : '/attendees/icon-user-default.png'
 					});
 					volunteerBaseView.add(volunteerImage);
 					
 					var volunteerName = Ti.UI.createLabel({
 						text : categories[key][i].field_first_name +' '+categories[key][i].field_last_name,
-						font : { fontSize : 14 },
+						font : { fontSize : 13, fontWeight : 'bold' },
 						color : '#000000',
 						top : 155,
 						height : 20,
-						lines : 1
+						lines : 1,
+						textAlign : 'center',
+						width : 130
 					});
 					volunteerBaseView.add(volunteerName);
 					

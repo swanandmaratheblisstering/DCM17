@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Theme.dcmTheme" parent="@style/Theme.AppCompat.Light">
+    <item name="colorPrimary">#c0c0c0</item>
+    <item name="colorPrimaryDark">#c0c0c0</item>
+    <item name="android:statusBarColor">#c0c0c0</item>
+    <item name="android:navigationBarColor">#000000</item>
+</style>
+</resources>

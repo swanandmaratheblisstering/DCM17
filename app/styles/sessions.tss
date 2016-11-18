@@ -4,8 +4,8 @@
 }
 
 "#tabView" : {
-	height : '30dp',
-	top : '0dp'
+	height : 40,
+	top : 2
 }
 
 ".lblTab" : {
@@ -15,9 +15,9 @@
 		fontSize : 14
 	},
 	color : "#000000",
-	borderColor : '#80000000',
+	borderColor : '#00000000',
 	borderWidth : 1,
-	height : Titanium.UI.FILL
+	height : 40
 }
 
 "#lblApproved" : {
@@ -28,11 +28,11 @@
 
 "#lblPending" : {
 	selectedColor : "#2aa9de",
-	backgroundColor : "transparent",
+	backgroundColor : "#d4eef8",
 	selected : false
 }
 
 "#tblSession" : {
-	top : 30,
+	top : 45,
 	rowHeight : 50
 }

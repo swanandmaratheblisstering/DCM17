@@ -14,7 +14,7 @@
 			</Require>
 			<Widget id="fa" src="com.mattmcfarland.fontawesome"/>
 		</Window>
-		<Window platform="android" role="centerWindow">
+		<Window platform="android" role="centerWindow" exitOnClose="true">
 		  <ActionBar onHomeIconItemSelected="onMenuButtonClick" title="DCM 17" ></ActionBar>
 			<!-- <Menu>
 				<MenuItem id="item1" title="Settings"/>

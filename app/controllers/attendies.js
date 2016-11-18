@@ -47,17 +47,20 @@ function addOnScrollView(obj){
 			// borderRadius : 70,
 			borderWidth : 4,
 			borderColor : '#ffffff',
-			image : obj[i].user_picture
+			image : obj[i].user_picture,
+			defaultImage : '/attendees/icon-user-default.png'
 		});
 		attendeesBaseView.add(attendeesImage);
 		
 		var attendeesName = Ti.UI.createLabel({
 			text : obj[i].field_first_name +' '+obj[i].field_last_name,
-			font : { fontSize : 14 },
+			font : { fontSize : 13, fontWeight : 'bold' },
 			color : '#ffffff',
-			top : 155,
+			top : 145,
 			height : 20,
-			lines : 1
+			lines : 1,
+			textAlign : 'center',
+			width : 130
 		});
 		attendeesBaseView.add(attendeesName);
 		
@@ -65,7 +68,7 @@ function addOnScrollView(obj){
 			text : obj[i].field_organisation,
 			font : { fontSize : 12 },
 			color : '#ffffff',
-			top : 175 
+			top : 180 
 		});
 		attendeesBaseView.add(attendeesCompany);
 		

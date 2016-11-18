@@ -1,6 +1,6 @@
 <Alloy>
     <View class="container" backgroundColor="#2aa9de">
-    	<ImageView top="20" height="150" width="150" image="mainScreen/dcmlogo.png" backgroundColor="#2aa9de"></ImageView>
+    	<ImageView top="20" height="150" width="150" image="/mainScreen/dcmlogo.png" backgroundColor="#2aa9de"></ImageView>
         <ListView id="listView" top="170">
             <Templates>
                 <ItemTemplate name="menuItem" class="menuItem">
