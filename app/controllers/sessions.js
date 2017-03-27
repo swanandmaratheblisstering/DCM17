@@ -1,4 +1,4 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
+	// Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
 var config = require('config');
@@ -13,8 +13,8 @@ var pgIndicator = null;
 var approvedData = [];
 var pendingData = [];
 
-get_sessions(addSessions, 'approvedData', 24);
-get_sessions(addSessions, 'pendingData', 25);
+get_sessions(addSessions, 'approvedData', 23);
+// get_sessions(addSessions, 'pendingData', 24);
 function get_sessions(_callback, _type, param){
 	if(_type == 'approvedData'){
 		pgIndicator = progressIndicator.getProgressIndicator();
@@ -91,7 +91,8 @@ function addSessions(obj, _type){
 			if (categories[key].length){
 				for (var i = 0; i < categories[key].length; i++) {
 					var sectionRow = Ti.UI.createTableViewRow({
-						height : 50
+						height : 100,
+						data : categories[key][i]
 					});
 					// var imgSession = Ti.UI.createImageView({
 						// width : 40,
@@ -100,12 +101,15 @@ function addSessions(obj, _type){
 						// left : 3
 					// });
 					// sectionRow.add(imgSession);
+					var title = categories[key][i].title;
+					title = title.replace("&#039;", "'");
 					var sectionRowTitle = Ti.UI.createLabel({
-						text : categories[key][i].title + ' \nSpeakers : ' + categories[key][i].field_speakers,
+						text : title + ' \nSpeakers : ' + categories[key][i].field_speakers,
 						font : { fontSize : 16 },
 						left : 30,
 						right : 10,
-						color : '#000000'
+						color : '#000000',
+						data : categories[key][i]
 					});
 					sectionRow.add(sectionRowTitle);
 					section.add(sectionRow);
@@ -120,6 +124,29 @@ function addSessions(obj, _type){
 	}
 	
 	$.tblSession.data = approvedData;
+}
+
+$.tblSession.addEventListener('click', function(e){
+	// alert(e.source.data.nid);
+	pgIndicator = progressIndicator.getProgressIndicator();
+	$.sessionsScreen.add(pgIndicator);
+	customWebservice.get_session_detail( e.source.data.nid, function(obj){
+		$.sessionsScreen.remove(pgIndicator);
+		if ((obj) && (obj !== null)) {
+			if (obj.responseCode == 0) {
+				Ti.UI.createAlertDialog({message : 'Please check your internet connection', title : L('Alert'), buttonNames : [L('Ok')]}).show();
+			}else if (obj) {
+				openSessionDetail(JSON.parse(obj));
+			} else {
+				Ti.UI.createAlertDialog({message : obj.message, title : L('Alert'), buttonNames : [L('Ok')]}).show();
+			}
+		}
+	});
+});
+
+function openSessionDetail(_data){
+	Ti.API.info('_data : '+JSON.stringify(_data));
+	Alloy.Globals.index.setCenterView(Alloy.createController('sessionDetail',{data : _data}).getView());
 }
 
 var updateTblSessionData = function(e){

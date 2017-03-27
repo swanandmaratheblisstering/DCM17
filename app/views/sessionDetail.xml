@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="container" id="sessionDetailScreen" backgroundColor="gray">
+	    
+		
+	    <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+	</View>
+</Alloy>

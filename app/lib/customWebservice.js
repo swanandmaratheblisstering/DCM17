@@ -47,6 +47,23 @@ exports.get_sessions = function(_param, callback) {
 
 /**
  *
+ * get_session_detail API
+ * @param {Function} callback
+ */
+exports.get_session_detail = function(_param, callback) {
+	var endpoint = baseEndpoint + '/session-detail/'+_param;
+	var header_data = [];
+	var param = "";
+	Logging.printConsoleLogs('get_session_detail param : '+JSON.stringify(param));
+	Logging.printConsoleLogs('get_session_detail param : '+endpoint);
+	webservice.callWebServiceJSON('GET', endpoint, param, header_data, 'json', false, function(e) {
+		Logging.printConsoleLogs('get_session_detail : '+JSON.stringify(e));
+		callback(e);
+	}, true);
+};
+
+/**
+ *
  * get_volunteers API
  * @param {Function} callback
  */

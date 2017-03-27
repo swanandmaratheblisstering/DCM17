@@ -10,6 +10,8 @@ function onDrawerClose(e) {
     Ti.API.info($.index.isLeftDrawerOpen);
 }
 
+Alloy.Globals.index = $.index;
+
 $.menuC.on('menuclick',function(e){
     $.index.toggleLeftView({animated:false}); //animated option only work on ios
     

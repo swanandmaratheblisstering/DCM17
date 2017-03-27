@@ -3,7 +3,7 @@
 	    
 		<View id="tabView" onClick="updateTblSessionData">
 			<Label class="lblTab" left="0" color="#ffffff" id="lblApproved">Approved</Label>
-			<Label class="lblTab" right="0" color="#000000" id="lblPending">Proposed</Label>
+			<!-- <Label class="lblTab" right="0" color="#000000" id="lblPending">Proposed</Label> -->
 		</View>
 		<TableView id="tblSession"></TableView>
 	    <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
