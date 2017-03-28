@@ -2,7 +2,16 @@
 var args = $.args;
 var html2as = require('nl.fokkezb.html2as');
 
-$.sessionTitle.text = args.data[0].title;
+$.sessionDetailScreen.addEventListener('open', function(evt){
+	if (OS_ANDROID) {
+		var actionBar = evt.source.activity.actionBar;
+		if (actionBar) {
+			actionBar.hide();
+		}
+	}
+});
+var title = args.data[0].title;
+$.sessionTitle.text = title = title.replace("&#039;", "'");
 $.sessionTime.text = args.data[0].field_session_time;
 $.sessionRoom.text = args.data[0].field_seminar_room;
 

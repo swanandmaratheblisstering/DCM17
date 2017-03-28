@@ -56,10 +56,10 @@ function addOnScrollView(obj){
 			if (categories[key].length){
 				for (var i = 0; i < categories[key].length; i++) {
 					var imgSponsor = Ti.UI.createImageView({
-						width : 300,
-						height : 200,
+						// width : 300,
+						height : 140,
 						image : categories[key][i].field_sponsor_logo,
-						top : 10
+						top : '20dp'
 					});
 					$.sponsorsScrollView.add(imgSponsor);
 				}
