@@ -1,7 +1,27 @@
 <Alloy>
-	<View class="container" id="sessionDetailScreen" backgroundColor="gray">
-	    
-		
+	<Window class="container" id="sessionDetailScreen" >
+	    <View id="headerView" height="70dp" top="0dp" backgroundColor="white">
+	    	<Button id="back" onClick="closeWindow"></Button>
+	    </View>
+	    <View layout="vertical" top="70dp"> 
+	    	<Label id="sessionTitle"></Label>
+			<ScrollView scrollType="vertical" width="90%" top="10dp" bottom="0dp" layout="vertical">
+				<Label id="sessionTime" top="0dp"></Label>
+				<Label id="sessionRoom"></Label>
+				<Label id="sessionTrack"></Label>
+				<Label id="sessionExpLevel"></Label>
+				
+				<View height="Titanium.UI.SIZE" layout="vertical" top="10dp" id="speakersView">
+					<!-- <View left="60dp" top="0" height="1dp" backgroundColor="gray"></View>
+					<View left="60dp" top="5dp" height="1dp" backgroundColor="gray"></View>
+					<!-- <ImageView id="speakerImage" left="5dp" height="40dp" width="40dp" borderRadius="20dp"></ImageView>
+					<Label id="speakerName" top="5dp"></Label>
+					<Label id="speakerCompany" bottom="5dp"></Label> -->
+				</View>
+				
+				<Label id="sessionBody" top="10dp"></Label>
+			</ScrollView>
+		</View>
 	    <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
-	</View>
+	</Window>
 </Alloy>

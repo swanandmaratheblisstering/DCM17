@@ -146,7 +146,8 @@ $.tblSession.addEventListener('click', function(e){
 
 function openSessionDetail(_data){
 	Ti.API.info('_data : '+JSON.stringify(_data));
-	Alloy.Globals.index.setCenterView(Alloy.createController('sessionDetail',{data : _data}).getView());
+	// Alloy.Globals.index.setCenterView(Alloy.createController('sessionDetail',{data : _data}).getView());
+	Alloy.createController('sessionDetail',{data : _data}).getView().open();
 }
 
 var updateTblSessionData = function(e){

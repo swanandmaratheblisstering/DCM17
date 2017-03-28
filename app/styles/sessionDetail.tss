@@ -1,4 +1,42 @@
 
 ".container" : {
-  
+  	backgroundColor: '#efefef'
+}
+
+"#back" : {
+	height : '30dp',
+	width : '30dp',
+	backgroundImage : '/images/arrow_back.png',
+	left : '10dp',
+	bottom : '10dp'
+}
+
+"#sessionTitle" : {
+	font : { fontWeight : 'bold', fontSize : '20dp' },
+	left : '10dp',
+	right : '10dp',
+	textAlign : 'center',
+	top : '5dp'
+}
+
+"#sessionTime" : {
+	font : { fontSize : '14dp' }
+}
+
+"#sessionRoom" : {
+	font : { fontSize : '14dp' }
+}
+
+"#sessionBody" : {
+	font : { fontSize : '18dp' }
+} 
+
+"#speakerName" : {
+	font : { fontWeight : 'bold', fontSize : '16dp' },
+	left : '60dp',
+}
+
+"#speakerCompany" : {
+	font : { fontSize : '16dp' },
+	left : '60dp',
 }
